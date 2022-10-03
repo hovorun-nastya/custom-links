@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "vercel-build": "npm run prisma:generate && next build",
+    "generate-client": "prisma generate --data-proxy",
+    "vercel-build": "prisma:generate && next build",
     "prisma:generate": "PRISMA_CLIENT_ENGINE_TYPE=\"dataproxy\" prisma generate"
   },
   "dependencies": {
