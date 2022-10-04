@@ -4,7 +4,7 @@ import { relayStylePagination } from '@apollo/client/utilities';
 const apolloClient = new ApolloClient({
   uri: process.env.NODE_ENV === 'development'
     ?'http://localhost:3000/api/graphql'
-    :'https://custom-links.vercel.app/api/graphql',
+    :'/api/graphql',
   cache: new InMemoryCache({
     typePolicies: {
       Query: {
