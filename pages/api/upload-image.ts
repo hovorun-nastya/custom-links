@@ -3,6 +3,7 @@ import aws from 'aws-sdk'
 export default async function handler(req, res) {
   try {
     // 1.
+
     const s3 = new aws.S3({
       accessKeyId: process.env.APP_AWS_ACCESS_KEY,
       secretAccessKey: process.env.APP_AWS_SECRET_KEY,
